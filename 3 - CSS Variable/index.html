@@ -3,9 +3,28 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/style.css">
     <title>Scoped CSS Variables and JS</title>
 </head>
 <body>
-    
+    <h1>Update CSS Variables with <span class="highlight">JS</span></h1>
+    <div class="controls">
+        <div class="size">
+            <label for="Size">Size</label>
+            <input type="range" name="size" min="0" max="100" value="2" data-sizing="px">
+        </div>
+        <div class="blur">
+            <label for="blur">Blur</label>
+            <input type="range" name="blur" min="0" max="10" value="2" data-sizing="px">
+        </div>
+        <div class="color">
+            <label for="color">Color</label>
+            <input type="color" name="color" min="0" max="100" value="#ffc600">
+        </div>
+    </div>
+
+    <img src="https://source.unsplash.com/7bwQXzbF6KE/800x500">
+
+<script src="js/script.js"></script>
 </body>
 </html>
